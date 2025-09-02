@@ -1,0 +1,59 @@
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-height: 100vh;
+}
+.container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EFCB68;
+}
+ h1{
+  color:#0084ff
+}
+.task{
+  width: 50%;
+  height: 300px;
+  border: 2px solid black;
+  margin-right: 20px;     
+  border-radius: 10px;
+  border: 5px solid #EFCB68;
+  padding: 5vh;
+}
+button{
+  background-color: #EFCB68;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover{
+  background-color: #0084ff;
+  color: white;
+  
+}
+.alternativas{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px; 
+  font-size: 18px;  
+  font-weight: bold;
+}
+.silvio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.silvio img{
+  width: 300px;
+  height: 300px;  
+  border-radius: 50%;
+  border: 5px solid #EFCB68;
+  background-color: #0084ff;
+} 
