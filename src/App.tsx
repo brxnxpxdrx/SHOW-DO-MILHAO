@@ -5,10 +5,9 @@ import { useEffect, useState } from  'react'
 
 function App() {
  const [pergunta, setPergunta] = useState('')
- const [alternativas, setAlternativas] = useState([
-])
+  const [alternativas, setAlternativas] = useState<string[]>([]);
+
  const [correta, setCorreta] = useState('')
- const [index, setIndex] = useState(0)
 
 useEffect(() => {
  const tamanhoArray = task.length
@@ -18,7 +17,6 @@ useEffect(() => {
   setPergunta(task[numeroAleatorio].pergunta)
   setAlternativas(task[numeroAleatorio].alternativas)
   setCorreta(task[numeroAleatorio].correta)
-  setIndex(numeroAleatorio)
     return () => {
       audio.pause();
       audio.currentTime = 0;
@@ -51,7 +49,6 @@ useEffect(() => {
                setPergunta(task[numeroAleatorio].pergunta)
                setAlternativas(task[numeroAleatorio].alternativas)
                setCorreta(task[numeroAleatorio].correta)
-               setIndex(numeroAleatorio)
             }}>{item}</button>
           ))  
         }
